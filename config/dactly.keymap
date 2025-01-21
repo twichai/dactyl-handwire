@@ -1,0 +1,57 @@
+/*
+ * Copyright (c) 2022 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <24 25>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+           &kp Q  &kp W  &kp E     &kp R     &kp T                              &kp Y      &kp U      &kp I                 &kp O              &kp P
+&kp ESC    &kp A  &kp S  &kp D     &kp F     &kp G                              &kp H      &kp J      &kp K                 &kp L              &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V     &kp B                              &kp N      &kp M      &kp COMMA             &kp DOT            &kp FSLH  &kp RSHFT
+
+                  &mo 1  &kp LBKT  &kp BSPC  &kp DELETE                         &kp ENTER  &kp SPACE  &kp LEFT_PARENTHESIS  &kp RIGHT_CONTROL
+                                                         &kp LEFT_ALT    &mo 2
+            >;
+        };
+
+        number {
+            bindings = <
+                &bt BT_SEL 0  &trans  &trans  &trans  &trans                    &trans  &kp N7  &kp N8  &kp N9  &trans
+&bt BT_CLR_ALL  &trans        &trans  &trans  &trans  &trans                    &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans          &trans        &trans  &trans  &trans  &trans                    &kp N0  &kp N1  &kp N2  &kp N3  &trans  &trans
+
+                              &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans
+                                                              &trans    &trans
+            >;
+        };
+
+        layer_2 {
+            bindings = <
+           &trans    &kp AT_SIGN       &kp HASH        &kp DOLLAR            &kp PERCENT                    &kp LCTRL       &kp AMPERSAND          &kp ASTERISK     &kp EXCLAMATION    &trans
+&trans     &trans    &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp MINUS                      &kp PLUS        &kp RIGHT_PARENTHESIS  &sk RIGHT_BRACE  &kp RIGHT_BRACKET  &trans                &trans
+&sk LSHFT  &sk LALT  &sk LGUI          &sk LCTRL       &kp EQUAL             &trans                         &kp LEFT_ARROW  &kp DOWN               &kp UP_ARROW     &sk RIGHT          &kp NON_US_BACKSLASH  &trans
+
+                     &trans            &trans          &trans                &trans                         &trans          &trans                 &trans           &trans
+                                                                                          &trans    &trans
+            >;
+        };
+    };
+};
