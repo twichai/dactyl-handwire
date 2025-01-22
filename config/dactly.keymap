@@ -16,6 +16,16 @@
             bindings = <&mo 2>;
             key-positions = <32 31 33>;
         };
+
+        boot_L {
+            bindings = <&bootloader>;
+            key-positions = <0 12 24 36>;
+        };
+
+        boot_r {
+            bindings = <&bootloader>;
+            key-positions = <11 23 35 47>;
+        };
     };
 
     keymap {
