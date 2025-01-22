@@ -24,7 +24,7 @@
 
         boot_r {
             bindings = <&bootloader>;
-            key-positions = <11 23 35 47>;
+            key-positions = <11 35>;
         };
     };
 
