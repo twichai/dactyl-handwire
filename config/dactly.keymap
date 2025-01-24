@@ -13,8 +13,14 @@
         compatible = "zmk,combos";
 
         sym {
-            bindings = <&mo 2>;
+            bindings = <&mo 3>;
             key-positions = <32 31 33>;
+        };
+
+        switch-mac-windows {
+            bindings = <&tog 1>;
+            key-positions = <0 1 2 3>;
+            layers = <0 1>;
         };
     };
 
@@ -23,14 +29,27 @@
 
         layer_0 {
             bindings = <
-&kp GRAVE  &kp LS(EXCL)  &kp LBKT  &kp LS(LBRC)  &kp LS(LPAR)  &kp MINUS               &kp EQUAL      &kp LS(RPAR)  &kp LS(RBRC)  &kp RBKT  &kp N0     &kp PRINTSCREEN
-&kp TAB    &kp Q         &kp W     &kp E         &kp R         &kp T                   &kp Y          &kp U         &kp I         &kp O     &kp P      &kp BSLH
-&kp ESC    &kp A         &kp S     &kp D         &kp F         &kp G                   &kp H          &kp J         &kp K         &kp L     &kp SEMI   &kp SQT
-&kp LSHFT  &kp Z         &kp X     &kp C         &kp V         &kp B                   &kp N          &kp M         &kp COMMA     &kp DOT   &kp FSLH   &kp RSHFT
-           &kp GRAVE     &mo 1     &kp LEFT      &kp RIGHT                                            &kp DOWN      &kp UP        &mo 2     &kp EQUAL
-                                                               &kp LCTRL   &kp LALT    &kp LGUI       &kp LCTRL
-                                                                           &kp HOME    &kp PAGE_UP
-                                                 &kp BSPC      &kp DELETE  &kp END     &kp PAGE_DOWN  &kp RET       &kp SPACE
+&kp GRAVE  &kp LS(EXCL)  &kp LBKT  &kp LS(LBRC)  &kp LS(LPAR)  &kp MINUS              &kp EQUAL      &kp LS(RPAR)  &kp LS(RBRC)  &kp RBKT  &kp N0     &kp PRINTSCREEN
+&kp DEL    &kp Q         &kp W     &kp E         &kp R         &kp T                  &kp Y          &kp U         &kp I         &kp O     &kp P      &kp BSLH
+&kp ESC    &kp A         &kp S     &kp D         &kp F         &kp G                  &kp H          &kp J         &kp K         &kp L     &kp SEMI   &kp SQT
+&kp LSHFT  &kp Z         &kp X     &kp C         &kp V         &kp B                  &kp N          &kp M         &kp COMMA     &kp DOT   &kp FSLH   &kp RSHFT
+           &kp GRAVE     &mo 2     &kp LEFT      &kp RIGHT                                           &kp DOWN      &kp UP        &kp RWIN  &kp EQUAL
+                                                               &kp LCTRL  &kp LALT    &kp RIGHT_ALT  &kp LCTRL
+                                                                          &kp HOME    &kp PAGE_UP
+                                                 &kp BSPC      &kp TAB    &kp END     &kp PAGE_DOWN  &kp RET       &kp SPACE
+            >;
+        };
+
+        mac {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                 &trans     &trans    &trans  &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                 &trans     &trans    &trans  &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                 &trans     &trans    &trans  &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                 &trans     &trans    &trans  &trans         &trans  &trans
+        &trans  &trans  &trans  &trans                                    &trans    &trans  &kp RIGHT_ALT  &trans
+                                        &kp LGUI  &kp LCTRL    &kp LCTRL  &kp LGUI
+                                                  &trans       &trans
+                                &trans  &trans    &trans       &trans     &trans    &trans
             >;
         };
 
