@@ -14,6 +14,9 @@ endif
 
 if DACTLY_RIGHT
 
+config CONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY
+    default y
+    
 endif
 
 if DACTLY_LEFT || DACTLY_RIGHT
