@@ -31,7 +31,7 @@
            &kp C_VOL_DN     &kp C_VOL_UP    &kp LEFT              &kp RIGHT                                                   &kp DOWN           &kp UP                 &kp LEFT_BRACKET  &kp RIGHT_BRACKET
                                                                                     &kp LCTRL  &kp LALT        &kp RIGHT_ALT  &kp LCTRL
                                                                                                &kp LEFT_WIN    &kp LWIN
-                                                                  &kp BSPC          &kp TAB    &mo 2           &mo 2          &kp RET            &kp SPACE
+                                                                  &kp BSPC          &lt 2 TAB  &kp HOME        &kp END        &lt 2 RETURN       &kp SPACE
             >;
         };
 
