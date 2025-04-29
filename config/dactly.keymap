@@ -17,6 +17,16 @@
             key-positions = <63 49>;
             layers = <0 1>;
         };
+
+        number {
+            bindings = <&mo 2>;
+            key-positions = <28 27 26>;
+        };
+
+        sym {
+            bindings = <&mo 2>;
+            key-positions = <31 32 33>;
+        };
     };
 
     keymap {
@@ -31,7 +41,7 @@
            &kp C_VOL_DN     &kp C_VOL_UP    &kp LEFT              &kp RIGHT                                                   &kp DOWN           &kp UP                 &kp LEFT_BRACKET  &kp RIGHT_BRACKET
                                                                                     &kp LCTRL  &kp LALT        &kp RIGHT_ALT  &kp LCTRL
                                                                                                &kp LEFT_WIN    &kp LWIN
-                                                                  &kp BSPC          &lt 2 TAB  &kp HOME        &kp END        &lt 2 RETURN       &kp SPACE
+                                                                  &kp BSPC          &kp TAB    &kp HOME        &kp END        &kp ENTER          &kp SPACE
             >;
         };
 
